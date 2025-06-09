@@ -19,7 +19,7 @@ This project demonstrates how to deploy and manage [SuiteCRM](https://suitecrm.c
 
 ## 🧱 Folder Structure
 
-```bash
+
 automated-suitecrm-deployment-on-aws-using-terraform-and-ansible/
 ├── terraform/         # Infrastructure provisioning (VPC, EC2, RDS, S3, etc.)
 │   ├── main.tf
