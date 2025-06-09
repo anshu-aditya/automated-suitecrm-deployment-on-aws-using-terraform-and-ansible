@@ -1,0 +1,19 @@
+- name: Deploy SuiteCRM
+  hosts: web
+  become: yes
+  tasks:
+    - name: Download SuiteCRM
+      get_url:
+        url: https://suitecrm.com/files/162/SuiteCRM-8.2/754/SuiteCRM-8.2.3.zip
+        dest: /tmp/suitecrm.zip
+
+    - name: Unzip SuiteCRM
+      unarchive:
+        src: /tmp/suitecrm.zip
+        dest: /var/www/html/
+        remote_src: yes
+
+    - name: Set permissions
+      shell: |
+        chown -R www-data:www-data /var/www/html/
+        chmod -R 755 /var/www/html/

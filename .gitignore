@@ -1,0 +1,7 @@
+*.pem
+*.log
+*.zip
+__pycache__/
+.env
+*.tfstate
+*.tfvars

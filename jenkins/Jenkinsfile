@@ -1,0 +1,25 @@
+pipeline {
+  agent any
+  stages {
+    stage('Pull Code') {
+      steps {
+        git 'https://github.com/your-username/automated-suitecrm-deployment-on-aws-using-terraform-and-ansible.git'
+      }
+    }
+    stage('Terraform Apply') {
+      steps {
+        dir('terraform') {
+          sh 'terraform init && terraform apply -auto-approve'
+        }
+      }
+    }
+    stage('Ansible Provision') {
+      steps {
+        dir('ansible') {
+          sh 'ansible-playbook -i inventory install-lamp.yml'
+          sh 'ansible-playbook -i inventory deploy-suitecrm.yml'
+        }
+      }
+    }
+  }
+}
