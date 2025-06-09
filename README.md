@@ -18,22 +18,28 @@ This project demonstrates how to deploy and manage [SuiteCRM](https://suitecrm.c
 ---
 
 ## 🧱 Folder Structure
-suitecrm-devops-automation-aws/
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── outputs.tf
-├── ansible/
-│   ├── inventory
-│   ├── install-lamp.yml
-│   ├── deploy-suitecrm.yml
-│   └── backup-suitecrm.yml
-├── jenkins/
-│   └── Jenkinsfile
-├── scripts/
-│   └── suitecrm-backup.sh
-├── diagrams/
-│   └── architecture-diagram.png
-├── .gitignore
-└── README.md
+automated-suitecrm-deployment-on-aws-using-terraform-and-ansible/
+├── terraform/ # Infrastructure provisioning with Terraform
+│ ├── main.tf
+│ ├── variables.tf
+│ └── outputs.tf
+│
+├── ansible/ # Configuration management with Ansible
+│ ├── inventory
+│ ├── install-lamp.yml
+│ ├── deploy-suitecrm.yml
+│ └── backup-suitecrm.yml
+│
+├── jenkins/ # CI/CD pipeline scripts (optional)
+│ └── Jenkinsfile
+│
+├── scripts/ # Utility scripts (e.g., backup to S3)
+│ └── suitecrm-backup.sh
+│
+├── diagrams/ # Architecture diagrams or flowcharts
+│ └── architecture-diagram.png
+│
+├── .gitignore # Git ignored files
+└── README.md # Project documentation
+
 
