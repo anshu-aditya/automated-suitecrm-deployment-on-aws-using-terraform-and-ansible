@@ -24,7 +24,7 @@ Ideal for DevOps engineers aiming to demonstrate real-world infrastructure autom
 - [Tech Stack](#-tech-stack)
 - [Architecture](#-architecture)
 - [Folder Structure](#-folder-structure)
-- [Setup Instructions](#setup-instructions)
+- [Setup Instructions](#-setup-instructions)
 - [Features](#-features)
 - [Screenshots / Demo](#-screenshots--demo)
 - [License](#-license)
@@ -84,7 +84,7 @@ See `diagrams/architecture-explanation.md` for a detailed breakdown of this diag
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1️⃣ Provision Infra with Terraform
 
